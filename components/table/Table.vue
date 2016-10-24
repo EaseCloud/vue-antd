@@ -108,8 +108,8 @@
 
     methods: {
       getColData(row, col) {
-        console.log(JSON.parse(JSON.stringify(row)));
-        console.log(JSON.parse(JSON.stringify(col)));
+//        console.log(JSON.parse(JSON.stringify(row)));
+//        console.log(JSON.parse(JSON.stringify(col)));
         if (col.render || !col.dataIndex) return '';
         let result = row;
         for (const key of col.dataIndex.split('.')) {
