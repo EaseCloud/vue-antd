@@ -220,22 +220,22 @@ jasmineRequire.HtmlReporter = function(j$) {
 
       if (failures.length) {
         alert.appendChild(
-          createDom('span', {className: 'menu bar spec-list'},
+          createDom('span', {className: 'menu bar spec-manage'},
             createDom('span', {}, 'Spec List | '),
             createDom('a', {className: 'failures-menu', href: '#'}, 'Failures')));
         alert.appendChild(
-          createDom('span', {className: 'menu bar failure-list'},
-            createDom('a', {className: 'spec-list-menu', href: '#'}, 'Spec List'),
+          createDom('span', {className: 'menu bar failure-manage'},
+            createDom('a', {className: 'spec-manage-menu', href: '#'}, 'Spec List'),
             createDom('span', {}, ' | Failures ')));
 
         find('.failures-menu').onclick = function() {
-          setMenuModeTo('failure-list');
+          setMenuModeTo('failure-manage');
         };
-        find('.spec-list-menu').onclick = function() {
-          setMenuModeTo('spec-list');
+        find('.spec-manage-menu').onclick = function() {
+          setMenuModeTo('spec-manage');
         };
 
-        setMenuModeTo('failure-list');
+        setMenuModeTo('failure-manage');
 
         var failureNode = find('.failures');
         for (var i = 0; i < failures.length; i++) {

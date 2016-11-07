@@ -97,7 +97,7 @@ export default {
   },
 
   ready () {
-    const clipboard = new Clipboard('.anticons-list li')
+    const clipboard = new Clipboard('.anticons-manage li')
     clipboard.on('success', (e) => {
       const item = e.trigger.__vfrag__.scope.item
 

@@ -1,4 +1,4 @@
-import './style/index.less';
+// import './style/index.less';
 // import meta from './package.json';
 // import * as utils from './utils';
 
