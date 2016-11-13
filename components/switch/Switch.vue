@@ -48,6 +48,7 @@
         }
         this.checked = !this.checked;
         this.onChange(this.checked);
+        this.$dispatch('change', this.checked);
         return false;
       },
     },
